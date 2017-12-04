@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+      "sourceMap": true,
+      "inlineSourceMap": false,
+      "target": "es2015",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "jsx": "react",
+      "experimentalDecorators": true,
+      "allowSyntheticDefaultImports": true,
+      "removeComments": true,
+      "emitDecoratorMetadata": true,
+      "noImplicitReturns": true,
+      "strictNullChecks": true,
+      "allowJs": true,
+      "newLine": "LF",
+      "noUnusedLocals": false
+    },
+    "exclude": [
+      "node_modules",
+      "dist",
+      "webpack.main.config.js",
+      "webpack.renderer.config.js"
+    ]
+  }
+  
