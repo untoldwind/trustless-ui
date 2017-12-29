@@ -4,7 +4,7 @@ import { ipcMain, Event } from "electron";
 import { Command } from "../shared/command";
 
 export function startBackend(): void {
-  const process = spawn('/home/bjunglas/bin/trustless-native');
+  const process = spawn('/usr/bin/trustless-native');
 
   const commandDelegate = new CommandDelegate(process.stdout, process.stdin);
 

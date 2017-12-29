@@ -12,7 +12,7 @@ module.exports = {
         ]
     },
     output: {
-        path: path.join(__dirname, 'dist'),
+        path: path.join(__dirname, 'build'),
         filename: '[name].js'
     },
     devServer: {
@@ -48,11 +48,6 @@ module.exports = {
         ]
     },
     plugins: [
-        new webpack.DefinePlugin({
-          'process.env': {
-            NODE_ENV: JSON.stringify('production')
-          }
-        }),
         new HtmlWebpackPlugin({
             template: './src/renderer/index.html.ejs',
             inject: 'body'

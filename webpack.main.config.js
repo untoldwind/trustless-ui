@@ -8,7 +8,7 @@ module.exports = {
         './src/main/main'
     ],
     output: {
-        path: path.join(__dirname, 'dist'),
+        path: path.join(__dirname, 'build'),
         filename: 'main.js'
     },
     resolve: {
@@ -30,7 +30,7 @@ module.exports = {
         //   }
         // }),
         new CopyWebpackPlugin([
-            { from: './src/main/app-package.json', to: path.join(__dirname, 'dist', 'package.json') }
+            { from: './src/main/app-package.json', to: path.join(__dirname, 'build', 'package.json') }
         ])
     ],
     node: {
